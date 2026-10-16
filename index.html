@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Solutions | Electrician, CCTV & Security Systems Nakuru</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            navy: '#1e293b',
+                            blue: '#0284c7',
+                            cyan: '#38bdf8',
+                            amber: '#eab308',
+                            gold: '#d97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-slate-900 text-slate-100 antialiased selection:bg-brand-cyan selection:text-slate-900">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-amber flex items-center justify-center text-slate-900 font-black text-xl shadow-lg shadow-brand-blue/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-white block leading-tight">BRIGHT FUTURE</span>
+                        <span class="text-xs font-semibold tracking-widest text-brand-cyan uppercase block">SOLUTIONS</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#services" class="hover:text-brand-cyan transition-colors">Services</a>
+                    <a href="#about" class="hover:text-brand-cyan transition-colors">About Us</a>
+                    <a href="#portfolio" class="hover:text-brand-cyan transition-colors">Projects</a>
+                    <a href="#calculator" class="hover:text-brand-cyan transition-colors">Estimate Cost</a>
+                    <a href="#contact" class="hover:text-brand-cyan transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:0112190969" class="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white px-3 py-2">
+                        <i class="fa-solid fa-phone text-brand-amber"></i>
+                        0112190969
+                    </a>
+                    <a href="#quote" class="bg-gradient-to-r from-brand-blue to-brand-cyan hover:brightness-110 text-slate-900 font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-brand-blue/20 transition-all hover:scale-[1.02] active:scale-95 text-sm">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-400 hover:text-white text-2xl p-2 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="mobile-link block py-2 text-slate-300 hover:text-brand-cyan font-medium">Services</a>
+            <a href="#about" class="mobile-link block py-2 text-slate-300 hover:text-brand-cyan font-medium">About Us</a>
+            <a href="#portfolio" class="mobile-link block py-2 text-slate-300 hover:text-brand-cyan font-medium">Projects</a>
+            <a href="#calculator" class="mobile-link block py-2 text-slate-300 hover:text-brand-cyan font-medium">Estimate Cost</a>
+            <a href="#contact" class="mobile-link block py-2 text-slate-300 hover:text-brand-cyan font-medium">Contact</a>
+            <div class="pt-4 border-t border-slate-800 flex flex-col gap-3">
+                <a href="https://wa.me/254112190969" target="_blank" class="w-full bg-emerald-600 text-white font-bold py-2.5 rounded-xl text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Direct
+                </a>
+                <a href="#quote" class="mobile-link w-full bg-brand-cyan text-slate-900 font-bold py-2.5 rounded-xl text-center">
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 lg:pt-44 lg:pb-32 overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900">
+        <!-- Background Grid & Glow Effects -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-blue/20 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-brand-amber/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column Text -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-blue/10 border border-brand-blue/30 text-brand-cyan text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+                        Trusted Technical Solutions in Nakuru & Regionally
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                        Powering Your Space. <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan via-blue-400 to-brand-amber">
+                            Securing Your Future.
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Expert electrical installations, HD CCTV security surveillance, high-voltage electric fencing, and reliable solar backup systems. Led by lead engineer <strong class="text-white">Salim Mwangi Kuria</strong>.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#quote" class="w-full sm:w-auto bg-gradient-to-r from-brand-blue to-brand-cyan text-slate-900 font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-blue/25 hover:brightness-110 transition-all text-center flex items-center justify-center gap-2 group">
+                            Request Free Inspection
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="https://wa.me/254112190969" target="_blank" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-slate-700 hover:border-emerald-500/50 font-semibold px-6 py-4 rounded-xl transition-all text-center flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                            WhatsApp 0112190969
+                        </a>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="pt-6 border-t border-slate-800 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <span class="text-2xl sm:text-3xl font-extrabold text-white block">100%</span>
+                            <span class="text-xs text-slate-400 font-medium">Safety Compliant</span>
+                        </div>
+                        <div>
+                            <span class="text-2xl sm:text-3xl font-extrabold text-white block">24/7</span>
+                            <span class="text-xs text-slate-400 font-medium">Rapid Response</span>
+                        </div>
+                        <div>
+                            <span class="text-2xl sm:text-3xl font-extrabold text-white block">Nakuru</span>
+                            <span class="text-xs text-slate-400 font-medium">& Surrounding Areas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Card/Image Feature -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl bg-slate-800/60 border border-slate-700/80 p-6 backdrop-blur-xl shadow-2xl overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-cyan/10 rounded-full blur-2xl"></div>
+                        
+                        <!-- Header badge -->
+                        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-700">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 rounded-full bg-slate-700 overflow-hidden border-2 border-brand-cyan flex items-center justify-center text-slate-300">
+                                    <i class="fa-solid fa-user-gear text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white leading-snug">Salim Mwangi Kuria</h3>
+                                    <p class="text-xs text-brand-cyan">Chief Technical Lead</p>
+                                </div>
+                            </div>
+                            <span class="bg-emerald-500/10 text-emerald-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-emerald-500/20">Available Now</span>
+                        </div>
+
+                        <!-- Core Technical Services quick links -->
+                        <div class="space-y-3">
+                            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/50 flex items-center justify-between hover:border-brand-cyan/50 transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="p-2 rounded-lg bg-brand-amber/10 text-brand-amber"><i class="fa-solid fa-bolt"></i></div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-white">Electrical Wiring & Repairs</p>
+                                        <p class="text-xs text-slate-400">Domestic & Industrial phase setup</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-slate-500"></i>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/50 flex items-center justify-between hover:border-brand-cyan/50 transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="p-2 rounded-lg bg-brand-blue/10 text-brand-cyan"><i class="fa-solid fa-video"></i></div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-white">Smart CCTV Surveillance</p>
+                                        <p class="text-xs text-slate-400">Remote mobile viewing & setup</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-slate-500"></i>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/50 flex items-center justify-between hover:border-brand-cyan/50 transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="p-2 rounded-lg bg-rose-500/10 text-rose-400"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-white">High Voltage Electric Fences</p>
+                                        <p class="text-xs text-slate-400">Energizer units & razor wires</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-slate-500"></i>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-slate-900/80 border border-slate-700/50 flex items-center justify-between hover:border-brand-cyan/50 transition-colors">
+                                <div class="flex items-center gap-3">
+                                    <div class="p-2 rounded-lg bg-amber-500/10 text-amber-300"><i class="fa-solid fa-solar-panel"></i></div>
+                                    <div>
+                                        <p class="text-sm font-semibold text-white">Solar Power & Inverters</p>
+                                        <p class="text-xs text-slate-400">Off-grid & back-up power</p>
+                                    </div>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-xs text-slate-500"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card footer button -->
+                        <div class="mt-6 pt-4 border-t border-slate-700/60 text-center">
+                            <span class="text-xs text-slate-400">Located at Nakuru City, Nakuru County, Kenya</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 bg-slate-900 border-t border-slate-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-cyan font-semibold text-xs tracking-widest uppercase block mb-2">Our Key Specializations</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Electrical & Security Solutions</h2>
+                <p class="mt-4 text-slate-400 text-base">From residential wiring to commercial security infrastructure, we deliver durable, regulation-compliant engineering across Nakuru.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-800/50 border border-slate-700/80 hover:border-brand-amber/60 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-amber/10 border border-brand-amber/20 flex items-center justify-center text-brand-amber text-2xl mb-6 group-hover:bg-brand-amber group-hover:text-slate-900 transition-colors">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Electrical Installations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Complete residential, commercial, and industrial electrical wiring, breaker panel upgrades, lighting design, and fault troubleshooting.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-amber"></i> Full house wiring & conduit work</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-amber"></i> Single & 3-phase power distribution</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-amber"></i> Electrical safety inspection</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-800/50 border border-slate-700/80 hover:border-brand-cyan/60 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center text-brand-cyan text-2xl mb-6 group-hover:bg-brand-cyan group-hover:text-slate-900 transition-colors">
+                            <i class="fa-solid fa-camera-rotate"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">CCTV Surveillance</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            High-definition HD & IP camera systems with night vision, motion detection, and seamless live mobile viewing setup.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i> Remote smartphone live monitoring</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i> DVR/NVR configuration & storage</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan"></i> Maintenance & camera upgrades</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-800/50 border border-slate-700/80 hover:border-rose-500/60 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-400 text-2xl mb-6 group-hover:bg-rose-500 group-hover:text-slate-900 transition-colors">
+                            <i class="fa-solid fa-shield-cat"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Electric Fencing</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            High-voltage perimeter protection with smart energizer alarms, razor wire integration, and perimeter security maintenance.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400"></i> Top-wall & free-standing fences</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400"></i> Energizer installation & siren setup</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-400"></i> Cut wire & short-circuit repair</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-800/50 border border-slate-700/80 hover:border-amber-400/60 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-amber-400/10 border border-amber-400/20 flex items-center justify-center text-amber-300 text-2xl mb-6 group-hover:bg-amber-400 group-hover:text-slate-900 transition-colors">
+                            <i class="fa-solid fa-solar-panel"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Solar & Backup</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Clean solar energy solutions, power inverter sizing, deep-cycle solar batteries, and uninterrupted backup systems.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-700/60 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-300"></i> Solar panel roof mounting</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-300"></i> Hybrid inverter & battery banks</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-300"></i> Off-grid black-out protection</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTIMATE COST CALCULATOR -->
+    <section id="calculator" class="py-20 bg-slate-950 border-t border-slate-800 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <div class="text-center mb-8">
+                    <span class="text-brand-amber font-semibold text-xs tracking-widest uppercase">Instant Estimator</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white mt-1">Estimate Your Project Cost</h2>
+                    <p class="text-slate-400 text-sm mt-2">Get an approximate estimate for electrical & security work in Nakuru.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Service Select -->
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Select Primary Service</label>
+                        <select id="calc-service" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                            <option value="electrical">Electrical Wiring / Upgrade</option>
+                            <option value="cctv">CCTV Camera Installation</option>
+                            <option value="fence">Electric Fence Perimeter</option>
+                            <option value="solar">Solar & Inverter Backup System</option>
+                        </select>
+                    </div>
+
+                    <!-- Scope / Size -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Property Size / Units</label>
+                            <select id="calc-size" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                                <option value="small">Small (1-2 Bedroom / Small Shop)</option>
+                                <option value="medium" selected>Medium (3-4 Bedroom / Standard House)</option>
+                                <option value="large">Large (Commercial / Multi-story / Large Compound)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Level</label>
+                            <select id="calc-level" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                                <option value="standard">Standard Installation</option>
+                                <option value="premium">Premium / Advanced Hardware</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Output Box -->
+                    <div class="mt-8 p-6 rounded-2xl bg-slate-800/80 border border-slate-700/80 text-center">
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block">Estimated Price Range (KSh)</span>
+                        <div id="calc-result" class="text-3xl sm:text-4xl font-extrabold text-brand-cyan my-2">KSh 15,000 - 35,000</div>
+                        <p class="text-xs text-slate-400">*Note: Final price subject to site survey by Salim Mwangi Kuria.</p>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <a href="#quote" class="inline-flex items-center gap-2 bg-brand-amber text-slate-950 font-bold px-6 py-3 rounded-xl hover:bg-amber-400 transition-colors text-sm">
+                            <i class="fa-solid fa-paper-plane"></i> Lock In Your Exact Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / WORK SHOWCASE -->
+    <section id="portfolio" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-cyan font-semibold text-xs tracking-widest uppercase block mb-2">Our Recent Projects</span>
+                    <h2 class="text-3xl font-extrabold text-white">Engineering Excellence in Action</h2>
+                </div>
+                <!-- Filter Tabs -->
+                <div class="flex flex-wrap gap-2 mt-6 md:mt-0" id="portfolio-filters">
+                    <button class="filter-btn active bg-brand-blue text-slate-900 font-bold px-4 py-2 rounded-xl text-xs" data-filter="all">All</button>
+                    <button class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium px-4 py-2 rounded-xl text-xs border border-slate-700" data-filter="electrical">Electrical</button>
+                    <button class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium px-4 py-2 rounded-xl text-xs border border-slate-700" data-filter="cctv">CCTV</button>
+                    <button class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium px-4 py-2 rounded-xl text-xs border border-slate-700" data-filter="fencing">Electric Fence</button>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="portfolio-item electrical bg-slate-800 rounded-2xl overflow-hidden border border-slate-700/70 group">
+                    <div class="h-48 bg-slate-700 relative overflow-hidden flex items-center justify-center bg-gradient-to-tr from-slate-800 to-slate-700">
+                        <i class="fa-solid fa-bolt text-5xl text-brand-amber/40 group-hover:scale-110 transition-transform"></i>
+                        <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-brand-amber text-[10px] font-bold px-2.5 py-1 rounded-md uppercase">Electrical</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-1">Commercial Panel Upgrade</h3>
+                        <p class="text-xs text-slate-400 mb-3"><i class="fa-solid fa-location-dot text-brand-cyan"></i> Nakuru Town Center</p>
+                        <p class="text-sm text-slate-300">Complete 3-phase distribution board wiring and load balancing for a commercial complex.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item cctv bg-slate-800 rounded-2xl overflow-hidden border border-slate-700/70 group">
+                    <div class="h-48 bg-slate-700 relative overflow-hidden flex items-center justify-center bg-gradient-to-tr from-slate-800 to-slate-700">
+                        <i class="fa-solid fa-video text-5xl text-brand-cyan/40 group-hover:scale-110 transition-transform"></i>
+                        <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-brand-cyan text-[10px] font-bold px-2.5 py-1 rounded-md uppercase">CCTV</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-1">8-Channel IP CCTV System</h3>
+                        <p class="text-xs text-slate-400 mb-3"><i class="fa-solid fa-location-dot text-brand-cyan"></i> Milimani, Nakuru</p>
+                        <p class="text-sm text-slate-300">Installed 4K night-vision camera setup with mobile remote access for a private estate.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item fencing bg-slate-800 rounded-2xl overflow-hidden border border-slate-700/70 group">
+                    <div class="h-48 bg-slate-700 relative overflow-hidden flex items-center justify-center bg-gradient-to-tr from-slate-800 to-slate-700">
+                        <i class="fa-solid fa-shield-halved text-5xl text-rose-400/40 group-hover:scale-110 transition-transform"></i>
+                        <span class="absolute top-3 left-3 bg-slate-900/80 backdrop-blur-md text-rose-400 text-[10px] font-bold px-2.5 py-1 rounded-md uppercase">Electric Fence</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-white mb-1">High-Voltage Perimeter Fence</h3>
+                        <p class="text-xs text-slate-400 mb-3"><i class="fa-solid fa-location-dot text-brand-cyan"></i> Njoro Area</p>
+                        <p class="text-sm text-slate-300">Installed top-wall electric fence with integrated alarm energizer and backup battery.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-brand-amber font-semibold text-xs tracking-widest uppercase block mb-2">Client Reviews</span>
+                <h2 class="text-3xl font-bold text-white">Trusted Across Nakuru County</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="text-brand-amber text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        "Salim fixed our commercial building's short circuit issue and installed a crisp CCTV system. Fast response and very transparent pricing!"
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">David Maina</h4>
+                        <span class="text-xs text-slate-400">Business Owner, Nakuru CBD</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="text-brand-amber text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        "Top quality electric fence installation. The alarm energizer works perfectly and Salim came back for a free maintenance check after 1 month."
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Grace Wanjiru</h4>
+                        <span class="text-xs text-slate-400">Homeowner, Section 58</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="text-brand-amber text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        "Our solar backup system was installed flawlessly. We haven't experienced power outages at our warehouse since. Highly recommended!"
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Peter Njuguna</h4>
+                        <span class="text-xs text-slate-400">Facility Manager, Pipeline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUOTE FORM SECTION -->
+    <section id="quote" class="py-24 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-gradient-to-b from-slate-800 to-slate-900 border border-slate-700 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="text-brand-cyan font-bold text-xs uppercase tracking-widest block mb-2">Get Started</span>
+                    <h2 class="text-3xl font-extrabold text-white">Request a Custom Quote</h2>
+                    <p class="text-slate-400 text-sm mt-2">Fill out the quick form below and Engineer Salim will get back to you immediately.</p>
+                </div>
+
+                <!-- Form -->
+                <form id="quote-form" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name *</label>
+                            <input type="text" required placeholder="e.g. John Kamau" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number *</label>
+                            <input type="tel" required placeholder="07XX XXX XXX or 0112190969" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="name@domain.com" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required *</label>
+                            <select class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan">
+                                <option>Electrical Installation / Repair</option>
+                                <option>CCTV Surveillance Setup</option>
+                                <option>Electric Fence Installation</option>
+                                <option>Solar & Inverter System</option>
+                                <option>Multiple / Complete Package</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Location / Project Details</label>
+                        <textarea rows="4" placeholder="Describe your location in Nakuru and any specific project requirements..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-cyan"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-brand-blue to-brand-cyan hover:brightness-110 text-slate-950 font-extrabold py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> Send Request Now
+                    </button>
+                </form>
+
+                <!-- Confirmation Box -->
+                <div id="form-success" class="hidden text-center py-12 space-y-4">
+                    <div class="w-16 h-16 bg-emerald-500/10 text-emerald-400 rounded-full flex items-center justify-center mx-auto text-3xl">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Quote Request Received!</h3>
+                    <p class="text-slate-300 text-sm max-w-md mx-auto">Thank you. Salim Mwangi Kuria will call or message you shortly at your provided phone number.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <footer id="contact" class="bg-slate-950 border-t border-slate-800 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-12 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-blue to-brand-amber flex items-center justify-center text-slate-900 font-black text-xl">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-extrabold tracking-tight text-white block">BRIGHT FUTURE</span>
+                            <span class="text-xs font-semibold tracking-widest text-brand-cyan uppercase block">SOLUTIONS</span>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
+                        Professional electrician and security systems provider in Nakuru City, Kenya. Safe, certified, and dependable engineering.
+                    </p>
+                    <div class="pt-2">
+                        <span class="text-xs text-slate-400 uppercase tracking-wider block font-semibold mb-2">Lead Engineer</span>
+                        <p class="text-white font-bold text-base">Salim Mwangi Kuria</p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Direct Contact Info -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Direct Contact Hub</h4>
+                    
+                    <a href="tel:0112190969" class="flex items-center gap-3 text-slate-300 hover:text-white group text-sm">
+                        <div class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-brand-amber group-hover:bg-brand-amber group-hover:text-slate-900 transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span>0112190969</span>
+                    </a>
+
+                    <a href="https://wa.me/254112190969" target="_blank" class="flex items-center gap-3 text-slate-300 hover:text-white group text-sm">
+                        <div class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                        </div>
+                        <span>WhatsApp Chat (0112190969)</span>
+                    </a>
+
+                    <a href="mailto:salimkuria63@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-white group text-sm">
+                        <div class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-brand-cyan group-hover:bg-brand-cyan group-hover:text-slate-900 transition-colors">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span>salimkuria63@gmail.com</span>
+                    </a>
+
+                    <div class="flex items-center gap-3 text-slate-300 text-sm pt-1">
+                        <div class="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-rose-400">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span>Nakuru City, Nakuru County, Kenya</span>
+                    </div>
+                </div>
+
+                <!-- Col 3: Quick Links -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#services" class="hover:text-brand-cyan transition-colors">Electrical Wiring</a></li>
+                        <li><a href="#services" class="hover:text-brand-cyan transition-colors">CCTV Cameras</a></li>
+                        <li><a href="#services" class="hover:text-brand-cyan transition-colors">Electric Fencing</a></li>
+                        <li><a href="#calculator" class="hover:text-brand-cyan transition-colors">Project Estimator</a></li>
+                        <li><a href="#quote" class="hover:text-brand-cyan transition-colors">Request Inspection</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                <p>&copy; <span id="year"></span> Bright Future Solutions. All Rights Reserved.</p>
+                <p>Official Website: <a href="https://www.salimkuria.com" class="text-brand-cyan hover:underline">www.salimkuria.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT INTERACTION LOGIC -->
+    <script>
+        // Set year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Price Estimator Logic
+        const serviceSelect = document.getElementById('calc-service');
+        const sizeSelect = document.getElementById('calc-size');
+        const levelSelect = document.getElementById('calc-level');
+        const resultDisplay = document.getElementById('calc-result');
+
+        const priceMatrix = {
+            electrical: { small: [10000, 20000], medium: [25000, 45000], large: [50000, 120000] },
+            cctv: { small: [18000, 30000], medium: [35000, 65000], large: [70000, 150000] },
+            fence: { small: [30000, 50000], medium: [55000, 95000], large: [100000, 220000] },
+            solar: { small: [40000, 75000], medium: [80000, 160000], large: [170000, 450000] }
+        };
+
+        function calculateEstimate() {
+            const service = serviceSelect.value;
+            const size = sizeSelect.value;
+            const level = levelSelect.value;
+
+            let [min, max] = priceMatrix[service][size];
+            if (level === 'premium') {
+                min = Math.round(min * 1.3);
+                max = Math.round(max * 1.35);
+            }
+
+            resultDisplay.textContent = `KSh ${min.toLocaleString()} - ${max.toLocaleString()}`;
+        }
+
+        serviceSelect.addEventListener('change', calculateEstimate);
+        sizeSelect.addEventListener('change', calculateEstimate);
+        levelSelect.addEventListener('change', calculateEstimate);
+
+        // Portfolio Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-blue', 'text-slate-900', 'font-bold');
+                    b.classList.add('bg-slate-800', 'text-slate-300');
+                });
+                btn.classList.add('bg-brand-blue', 'text-slate-900', 'font-bold');
+                btn.classList.remove('bg-slate-800', 'text-slate-300');
+
+                const filter = btn.getAttribute('data-filter');
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form Submit Handler
+        const quoteForm = document.getElementById('quote-form');
+        const formSuccess = document.getElementById('form-success');
+
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            quoteForm.classList.add('hidden');
+            formSuccess.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
